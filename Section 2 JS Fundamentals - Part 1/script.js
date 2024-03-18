@@ -116,24 +116,177 @@
 
 
 
-// 18. Taking decisions: if/else Statements 
-const age = 15;
+// // 18. Taking decisions: if/else Statements
+// const age = 15;
 
-if (age >= 18) {
-  console.log(`Sarah can start driving licence 🚗`)
-} else {
-  const yearsLeft = 18 - age;
-  console.log(`Sarah is too young. Wait another ${yearsLeft} years`)
+// if (age >= 18) {
+//   console.log(`Sarah can start driving licence 🚗`)
+// } else {
+//   const yearsLeft = 18 - age;
+//   console.log(`Sarah is too young. Wait another ${yearsLeft} years`)
+// }
+
+
+// const birthYear = 1991;
+// let century;
+
+// if (birthYear <= 2000) {
+//   century = 20;
+// } else {
+//   century = 21;
+// }
+
+// console.log(century)
+
+
+
+
+
+
+
+// 20. Type Conversion
+
+// const inputYear = '1991';
+// console.log(Number(inputYear), inputYear);
+// console.log(Number(inputYear) + 18);
+
+
+// console.log(Number('Jonas'));
+// console.log(typeof NaN);
+
+// console.log(String(23));
+
+// // Type Coercion
+
+// console.log('I am ' + 23 + ' years old')
+// console.log('23' - '10' - 3)
+// console.log('23' / '2')
+
+
+
+// let n = '1' + 1;
+// n = n - 1;
+// console.log(n);
+
+
+
+
+
+
+
+
+// 21. Truthy and Falsy values
+
+// 5 falsy values: 0, '', undefined, nul, Nan.
+
+// console.log(Boolean(0))
+// console.log(Boolean(undefined))
+// console.log(Boolean('Jonas'))
+// console.log(Boolean({}))
+
+// const money = 0
+// if (money) {
+//   console.log(`Don't spend it all`)
+// } else {
+//   console.log(`You should get a job`)
+// }
+
+
+// let height;
+
+// if (height) {
+//   console.log(`YAY! Height is defined`)
+// } else {
+//   console.log(`Height is UNDEFINED`)
+// }
+
+
+
+
+
+
+
+// 22. Equality Operators: == vs. ===
+
+// const age = 18
+
+// if (age === 18) console.log(`You just became an adult (strict)`)
+// if (age == 18) console.log(`You just became an adult (loose)`)
+
+// const favorite = Number(prompt(`What's your favorite number?`))
+// console.log(favorite)
+
+// if (favorite === 23) {
+//   console.log(`Cool! ${favorite} is an amazing number!`)
+// } else if (favorite === 7) {
+//   console.log(`Cool! ${favorite} is an amazing number!`)
+// } else {
+//   console.log(`Number is not 23 or 7`)
+// }
+
+// if (favorite !== 23) console.log(`Why not 23?`)
+
+
+
+
+
+
+
+// 24. Logical Operators
+
+// const hasDriversLicense = true
+// const hasGoodVision = false
+
+// console.log(hasDriversLicense && hasGoodVision)
+// console.log(hasDriversLicense || hasGoodVision)
+// console.log(!hasDriversLicense)
+
+
+// // if (hasDriversLicense && hasGoodVision) {
+// //   console.log(`Sarah is able to drive`)
+// // } else {
+// //   console.log(`Someone else should drive`)
+// // }
+
+// const isTired = true
+
+// console.log(hasDriversLicense || hasGoodVision || isTired)
+// console.log(hasDriversLicense && hasGoodVision && isTired)
+
+// if (hasDriversLicense && hasGoodVision && !isTired) {
+//   console.log(`Sarah is able to drive`)
+// } else {
+//   console.log(`Someone else should drive`)
+// }
+
+
+
+
+
+
+// 26. The switch Statement
+
+const day = `wednesday`
+
+switch (day) {
+  case 'monday': // day === 'monday'
+    console.log(`Plan course structure`)
+    console.log(`Go to coding meetup`)
+    break
+  case 'tuesday':
+    console.log(`Prepare theory videos`)
+    break
+  case 'wednesday':
+  case 'thursday':
+    console.log(`Write code examples`)
+    break
+  case 'friday':
+    console.log(`Record videos`)
+    break
+  case 'saturday':
+  case 'sunday':
+    console.log(`Enjoy the weekend`)
+    break
+  default:
+    console.log(`Not a valid day`)
 }
-
-
-const birthYear = 1991;
-let century;
-
-if (birthYear <= 2000) {
-  century = 20;
-} else {
-  century = 21;
-}
-
-console.log(century)
